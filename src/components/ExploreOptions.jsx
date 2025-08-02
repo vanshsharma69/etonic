@@ -18,8 +18,10 @@ const ExploreOptions = () => {
           <div className="flex items-center gap-2 text-2xl font-semibold mb-2">
             <Home className="w-7 h-7" /> Looking for a PG?
           </div>
-          <p className="text-sm mb-3">Find clean, safe, and affordable PGs near your location.</p>
-          <button className="text-sm underline">Explore Now</button>
+          <p className="text-sm mb-4">Find clean, safe, and affordable PGs near your location.</p>
+          <button className="bg-white text-black px-4 py-2 rounded-md text-sm font-medium w-fit hover:bg-gray-200 transition">
+            Explore Now
+          </button>
         </div>
       </div>
 
@@ -34,11 +36,15 @@ const ExploreOptions = () => {
             className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
           />
           <div className={`absolute inset-0 ${cardOverlay} flex flex-col justify-end p-4 text-white`}>
-            <div className="flex items-center gap-2 text-lg font-medium">
+            <div className="flex items-center gap-2 text-lg font-medium mb-1">
               <ShoppingCart className="w-5 h-5" /> Want to Buy?
             </div>
-            <p className="text-xs mt-1">Buy essentials, gadgets, furniture & more.</p>
-            <button className="mt-1 underline text-xs">Shop Now</button>
+            <p className="text-xs mb-2">Buy essentials, gadgets, furniture & more.</p>
+            <a href='/college'>
+              <button className="bg-white text-black px-3 py-1 rounded-md text-xs font-medium w-fit hover:bg-gray-200 transition">
+                Shop Now
+              </button>
+            </a>
           </div>
         </div>
 
@@ -50,11 +56,15 @@ const ExploreOptions = () => {
             className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
           />
           <div className={`absolute inset-0 ${cardOverlay} flex flex-col justify-end p-4 text-white`}>
-            <div className="flex items-center gap-2 text-lg font-medium">
+            <div className="flex items-center gap-2 text-lg font-medium mb-1">
               <UploadCloud className="w-5 h-5" /> Want to Sell?
             </div>
-            <p className="text-xs mt-1">Easily list your items for sale in minutes.</p>
-            <button className="mt-1 underline text-xs">Post Now</button>
+            <p className="text-xs mb-2">Easily list your items for sale in minutes.</p>
+            <a href='/college'>
+              <button className="bg-white text-black px-3 py-1 rounded-md text-xs font-medium w-fit hover:bg-gray-200 transition">
+                Post Now
+              </button>
+            </a>
           </div>
         </div>
 
@@ -66,11 +76,15 @@ const ExploreOptions = () => {
             className="w-full h-full object-cover transform group-hover:scale-105 transition duration-500"
           />
           <div className={`absolute inset-0 ${cardOverlay} flex flex-col justify-end p-4 text-white`}>
-            <div className="flex items-center gap-2 text-lg font-medium">
+            <div className="flex items-center gap-2 text-lg font-medium mb-1">
               <Handshake className="w-5 h-5" /> Become a Partner
             </div>
-            <p className="text-xs mt-1">Partner with us and grow your local business.</p>
-            <button className="mt-1 underline text-xs">Register Now</button>
+            <p className="text-xs mb-2">Partner with us and grow your local business.</p>
+            <a href='/partner'>
+              <button className="bg-white text-black px-3 py-1 rounded-md text-xs font-medium w-fit hover:bg-gray-200 transition">
+                Register Now
+              </button>
+            </a>
           </div>
         </div>
 

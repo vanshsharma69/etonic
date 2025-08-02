@@ -10,6 +10,7 @@ import Support from '../components/Support';
 import Footer from '../components/Footer';
 import ExploreOptions from '../components/ExploreOptions';
 import PGPromoBanner from '../components/PGPromoBanner';
+import Faq from '../components/Faq';
 
 
 const Home = () => {
@@ -25,6 +26,7 @@ const Home = () => {
         <MegaDeal></MegaDeal>
         <ExploreProducts></ExploreProducts>
         <Support></Support>
+        <Faq></Faq>
         <Footer></Footer>
     </div>
   )
