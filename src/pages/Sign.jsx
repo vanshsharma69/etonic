@@ -2,10 +2,12 @@ import React from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { GrGoogle } from 'react-icons/gr';
+import HeaderCta from '../components/HeaderCta';
 
 const Sign = () => {
   return (
     <div className="font-sans">
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       {/* Sign Up Section */}

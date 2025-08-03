@@ -2,10 +2,12 @@ import React from 'react';
 import { Truck, Clock3, ShieldCheck, ShoppingCart, Users, Star } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeaderCta from '../components/HeaderCta';
 
 const About = () => {
   return (
     <div>
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       {/* Our Story Section */}

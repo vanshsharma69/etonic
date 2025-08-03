@@ -12,6 +12,7 @@ import BuySell from './pages/BuySell';
 import BecomePartner from './pages/BecomePartner';
 import Orders from './pages/Orders';
 import WishList from './pages/WishList';
+import Profile from './pages/Profile';
 
 const App = () => {
   return (
@@ -28,6 +29,7 @@ const App = () => {
           <Route path="/partner" element={<BecomePartner></BecomePartner>} />
           <Route path="/orders" element={<Orders></Orders>} />
           <Route path="/wishlist" element={<WishList></WishList>} />
+          <Route path="/profile" element={<Profile></Profile>} />
 
         </Routes>
       </Router>

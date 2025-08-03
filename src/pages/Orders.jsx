@@ -2,6 +2,7 @@ import React from 'react';
 import { PackageCheck, Clock, XCircle } from 'lucide-react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeaderCta from '../components/HeaderCta';
 
 const orders = [
   {
@@ -33,6 +34,7 @@ const orders = [
 const Orders = () => {
   return (
     <div className="bg-gray-50 min-h-screen flex flex-col">
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       <main className="w-11/12 max-w-4xl mx-auto py-10 flex-grow">

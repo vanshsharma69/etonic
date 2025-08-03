@@ -9,6 +9,7 @@ import {
 } from '../redux/slices/cartSlice';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeaderCta from '../components/HeaderCta';
 
 const Cart = () => {
   const cartItems = useSelector((state) => state.cart.items);
@@ -29,6 +30,7 @@ const Cart = () => {
 
   return (
     <>
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       <div className="p-6 md:p-10 min-h-screen max-w-6xl mx-auto">

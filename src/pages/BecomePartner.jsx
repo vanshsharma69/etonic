@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { Store, Building2, GraduationCap } from 'lucide-react';
+import HeaderCta from '../components/HeaderCta';
 
 const BecomePartner = () => {
   const [selectedOption, setSelectedOption] = useState('shop');
@@ -86,11 +87,12 @@ const BecomePartner = () => {
 
   return (
     <>
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50 min-h-screen">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-extrabold text-center text-gray-800 mb-4">
+        <div className="max-w-6xl mx-auto">
+          <h2 className="text-6xl font-extrabold text-center text-gray-800 mb-4">
             Become Our Partner
           </h2>
           <p className="text-center text-gray-600 mb-10 max-w-2xl mx-auto">

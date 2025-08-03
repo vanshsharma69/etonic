@@ -2,10 +2,12 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import HeaderCta from '../components/HeaderCta';
 
 const NotFound = () => {
   return (
     <>
+      <HeaderCta></HeaderCta>
       <Navbar />
       <div className="flex flex-col items-center justify-center text-center min-h-[70vh] px-4">
         <div className="w-full max-w-2xl">

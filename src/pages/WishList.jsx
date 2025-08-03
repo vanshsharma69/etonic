@@ -4,12 +4,14 @@ import ProductCard from '../ui/ProductCard';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import { HeartOff } from 'lucide-react';
+import HeaderCta from '../components/HeaderCta';
 
 const WishList = () => {
   const wishlist = useSelector((state) => state.wishlist.items);
 
   return (
     <div className="min-h-screen flex flex-col bg-gray-50 text-gray-800">
+      <HeaderCta></HeaderCta>
       <Navbar />
 
       <main className="flex-grow w-11/12 max-w-6xl mx-auto py-12">
