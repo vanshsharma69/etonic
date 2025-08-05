@@ -59,7 +59,6 @@ const Profile = () => {
             Welcome, {user.name.split(' ')[0]}
           </h1>
           <p className="text-sm text-gray-500 mb-6">{user.createdAt}</p>
-
           <div className="bg-white rounded-xl shadow-md border px-6 py-6 relative">
             <button
               onClick={toggleEdit}

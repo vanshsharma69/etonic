@@ -1,7 +1,7 @@
 // src/pages/Cart.jsx
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import {
   updateQuantity,
   removeFromCart,
@@ -12,6 +12,7 @@ import Footer from '../components/Footer';
 import HeaderCta from '../components/HeaderCta';
 
 const Cart = () => {
+  const navigate = useNavigate();
   const cartItems = useSelector((state) => state.cart.items);
   const dispatch = useDispatch();
 
@@ -141,7 +142,8 @@ const Cart = () => {
                   <span>${subtotal.toFixed(2)}</span>
                 </div>
 
-                <button className="w-full mt-5 bg-red-500 text-white py-2 rounded hover:bg-red-600">
+                <button onClick={() => navigate('/checkout')}
+                 className="w-full mt-5 bg-red-500 text-white py-2 rounded hover:bg-red-600">
                   Proceed to Checkout
                 </button>
                 <button

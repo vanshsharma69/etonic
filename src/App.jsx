@@ -13,6 +13,8 @@ import BecomePartner from './pages/BecomePartner';
 import Orders from './pages/Orders';
 import WishList from './pages/WishList';
 import Profile from './pages/Profile';
+import Checkout from './pages/CheckOut';
+import Pg from './pages/Pg';
 
 const App = () => {
   return (
@@ -30,6 +32,8 @@ const App = () => {
           <Route path="/orders" element={<Orders></Orders>} />
           <Route path="/wishlist" element={<WishList></WishList>} />
           <Route path="/profile" element={<Profile></Profile>} />
+          <Route path="/checkout" element={<Checkout></Checkout>} />
+          <Route path="/pg" element={<Pg></Pg>} />
 
         </Routes>
       </Router>
